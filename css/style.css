@@ -1,0 +1,491 @@
+@font-face {
+  src: url(../fonts/OpenSans-Regular.ttf);
+  font-family: "OpenSans-Regular";
+}
+
+@font-face {
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+  font-family: "OpenSans-SemiBold";
+}
+
+@font-face {
+  src: url(../fonts/AmstelvarAlpha-VF.ttf);
+  font-family: "AmstelvarAlpha-VF";
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Light.ttf);
+  font-family: "Roboto-Light";
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Regular.ttf);
+  font-family: "Roboto-Regular";
+}
+
+@font-face {
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-family: "Roboto-Medium";
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "OpenSans-Regular";
+  text-transform: capitalize;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  h1 {
+    font-size: calc(28px / 1.3) !important;
+  }
+  h2 {
+    font-size: calc(50px / 1.3) !important;
+  }
+  h6, a, p {
+    font-size: calc(16px / 1.3) !important;
+  }
+  span {
+    font-size: calc(14px / 1.3) !important;
+  }
+}
+
+/* Support Classes */
+.abs {
+  position: absolute;
+}
+.rel {
+  position: relative;
+}
+.flex-cen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+/* End Support Classes */
+
+/* AIO */
+svg {
+  cursor: pointer;
+}
+h1 {
+  font-family: "AmstelvarAlpha-VF";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+h2 {
+  text-align: center;
+  font-family: "Roboto-Medium";
+  font-size: 50px;
+  font-weight: 500;
+}
+h6 {
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+}
+span {
+  color: var(--dark-50, rgba(0, 0, 0, 0.5));
+  text-align: right;
+  font-family: "OpenSans-SemiBold";
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration-line: strikethrough;
+}
+a {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+}
+.category a {
+  color: var(--dark-50, rgba(0, 0, 0, 0.5));
+  font-weight: 600;
+}
+.red {
+  color: var(--primary, #ff6f61);
+  font-feature-settings: "clig" off, "liga" off;
+}
+.price a {
+  font-family: "OpenSans-SemiBold";
+  font-weight: 600;
+  margin-left: 12px;
+}
+p {
+  color: var(--dark-50, rgba(0, 0, 0, 0.5));
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section-I,
+.section-II,
+.section-III,
+.section-IV,
+.section-V,
+.section-VI,
+.section-VII {
+  width: 100%;
+}
+.header,
+.body,
+.footer-baner {
+  width: 70%;
+}
+.main-navigation,
+.child-navigation,
+nav,
+.footer,
+.cards {
+  width: 100%;
+}
+.category {
+  width: 30%;
+}
+.card-footer {
+  width: 292px;
+  padding-top: 38px;
+}
+.card-footer h6 {
+  top: 0;
+  left: 0;
+}
+.div-h2 {
+  width: 100%;
+}
+/* Buttons */
+.button-account,
+.button-shop,
+.button-sale,
+.button-hot,
+.button-filter,
+.button-colleciton,
+.button-form,
+.button-scrol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+.button-account {
+  width: 100px;
+  height: 25px;
+  gap: 8px;
+  background-color: none;
+  color: #1e2832;
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  font-weight: 400;
+}
+.button-shop,
+.button-sale,
+.button-hot,
+.button-filter {
+  background-color: #1e2832;
+  color: #fff;
+}
+.button-shop {
+  width: 223px;
+  height: 72px;
+  gap: 11px;
+  font-size: 29px;
+  font-weight: 400;
+}
+.button-sale,
+.button-hot {
+  width: 52px;
+  height: 24px;
+  font-family: "OpenSans-SemiBold";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase !important;
+}
+.button-hot {
+  background-color: var(--primary, #ff6f61);
+}
+.button-filter {
+  width: 92px;
+  height: 32px;
+  gap: 4px;
+}
+.button-colleciton {
+  width: 237px;
+  height: 72px;
+  font-family: "Roboto-Regular";
+  font-size: 29px;
+  font-weight: 400;
+  background-color: #fff;
+  color: #1e2832;
+}
+.button-form {
+  width: 91px;
+  height: 32px;
+  border-bottom: 2px solid rgba(30, 40, 50, 1);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase !important;
+  color: #1e2832;
+}
+.button-scrol {
+  width: 150px;
+  height: 32px;
+  background: none;
+  gap: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Hovers */
+.category a:hover {
+  color: var(--dark, #000);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "OpenSans-SemiBold";
+  font-size: 16px;
+  font-weight: 600;
+}
+table tr:hover {
+  background-color: var(--black-5, rgba(30, 40, 50, 0.05));
+  cursor: pointer;
+}
+/* END AIO */
+
+/* Section-I */
+.section-I {
+  padding-top: 31px;
+  padding-bottom: 60px;
+  background-color: #1e28320d;
+  gap: 81px;
+}
+.section-I .header,
+.body {
+  gap: 30px;
+}
+
+.section-I .coral-logo {
+  gap: 10px;
+  margin-left: 5%;
+}
+.section-I .account-navigation {
+  gap: 22px;
+}
+.section-I hr {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+}
+.section-I h2 {
+  font-family: "Roboto-Light";
+  text-align: left;
+  font-size: 74px;
+  font-weight: 300;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.section-I p {
+  color: #000;
+  font-family: "Roboto-Regular";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 55px;
+  padding-bottom: 66px;
+}
+.section-I > .body .image-product {
+  width: 442px;
+  height: 562px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 160px 0px;
+}
+.section-I > .body img {
+  width: 442px;
+  height: 562px;
+  border-radius: 160px 0px;
+  top: -4%;
+  left: -4%;
+}
+.section-I .svg-left-flower {
+  bottom: 0;
+  left: 0;
+}
+.section-I .svg-right-flower {
+  width: 195px;
+  height: 262px;
+  top: 40%;
+  right: 0;
+}
+/* END Section-I */
+
+/* Section-II */
+.section-II {
+  padding-top: 90px;
+  padding-bottom: 140px;
+  gap: 90px;
+}
+.section-II > .header img {
+  width: 200px;
+  height: 70px;
+}
+.section-II > .body img {
+  width: 100%;
+}
+.section-II h2 {
+  font-family: "Roboto-Regular";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  left: 0;
+  top: 55%;
+}
+.section-II .button-sale {
+  top: 4%;
+  left: 0;
+}
+/* END Section-II */
+
+/* Section-III */
+.section-III {
+  padding-bottom: 140px;
+  gap: 35px;
+}
+
+.section-III .button-sale,
+.button-hot {
+  top: 5%;
+  left: 0;
+}
+
+/* END Section-III */
+
+/* Section-IV */
+.section-IV img {
+  width: 100%;
+}
+.section-IV > svg {
+  top: 2%;
+  right: 0;
+}
+.section-IV .text {
+  width: 27%;
+  top: 22%;
+  right: 15%;
+  gap: 55px;
+  align-items: flex-start !important;
+}
+.section-IV p {
+  color: #fff;
+  font-family: "Roboto-Regular";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 40px;
+}
+/* END Section-IV */
+
+/* Section-V */
+.section-V {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  gap: 35px;
+}
+.section-V .button-sale,
+.button-hot {
+  top: 5%;
+  left: 0;
+}
+.section-V .scrol {
+  width: 100%;
+  top: 35%;
+}
+/* END Section-V */
+
+/* Section-VI */
+.section-VI {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--black-5, rgba(30, 40, 50, 0.05));
+}
+.section-VI > .body {
+  margin-top: 60px;
+  gap: 70px;
+}
+.section-VI > .body > .conection-form {
+  width: 50%;
+  align-items: end !important;
+}
+
+.section-VI input {
+  width: 80%;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgba(30, 40, 50, 1);
+  color: rgba(30, 40, 50, 0.5);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  outline: none;
+}
+/* END Section-VI */
+
+/* Section-VII */
+.section-VII {
+  padding-top: 140px;
+  gap: 90px;
+}
+.section-VII .text {
+  width: 31%;
+  align-items: start !important;
+}
+.section-VII .icons {
+  width: 50%;
+}
+
+.section-VII .table {
+  width: 65%;
+}
+.section-VII table {
+  width: 200px;
+}
+.section-VII th {
+  padding-bottom: 10px;
+  color: var(--dark, #000);
+  font-family: "OpenSans-SemiBold";
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-VII td {
+  padding-top: 4px;
+  color: var(--black, #1e2832);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.section-VII .footer {
+  background: #1e2832;
+}
+.footer-baner p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+/* END Section-VII */
